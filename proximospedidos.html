@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hustle Lids</title>
+    <link rel="icon" href="Imagen de WhatsApp 2025-02-28 a las 20.21.53_4ee97fd8.jpg" type="image/png">
+    <style>
+         /* Estilos para el título con imagen */
+         .title-with-image {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .title-with-image img {
+            width: 50px; /* Ajusta el tamaño de la imagen */
+            height: auto;
+            margin-right: 10px; /* Espacio entre la imagen y el texto */
+        }
+        /* Estilos generales */
+        body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    background-image: url('Imagen de WhatsApp 2025-02-28 a las 20.21.53_4ee97fd8.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: auto; /* Cambiado a "auto" */
+}
+
+        /* Encabezado */
+        header {
+            background-color: rgba(0, 0, 0, 0.8); /* Fondo semi-transparente */
+            color: white;
+            padding: 20px;
+            width: 100%;
+            text-align: center;
+            backdrop-filter: blur(10px); /* Efecto de desenfoque */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            background: linear-gradient(90deg, #28a745, #218838); /* Gradiente */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        main {
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px 0;
+    flex-grow: 1;
+    overflow-y: auto; /* Permite el desplazamiento vertical */
+    height: 80vh; /* Ajusta la altura según sea necesario */
+}
+
+        /* Cuadrícula de productos */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Tarjetas más cuadradas */
+            gap: 20px;
+            padding: 20px;
+        }
+
+        /* Tarjeta de producto */
+        .product-card {
+            background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente */
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            text-align: center;
+            border-radius: 15px;
+            backdrop-filter: blur(10px); /* Efecto de desenfoque */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            aspect-ratio: 1 / 1; /* Hace que las tarjetas sean cuadradas */
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .product-card img {
+            max-width: 100%;
+            height: 200px; /* Altura fija para las imágenes */
+            object-fit: cover; /* Ajusta la imagen sin distorsionarla */
+            border-radius: 10px;
+        }
+
+        .product-card h2 {
+            font-size: 1.5em;
+            margin: 15px 0 10px;
+            color: #333;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .product-card p {
+            font-size: 1em;
+            color: #555;
+            margin: 0;
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: rgba(51, 51, 51, 0.8); /* Fondo semi-transparente */
+            color: white;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            backdrop-filter: blur(10px); /* Efecto de desenfoque */
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><a href="modelos.html">Para Próximos pedidos</a></h1>
+    </header>
+
+    <main>
+        <section class="product-grid">
+            <div class="product-card">
+                <img src="Yankees byn.jpg">
+                <h2>New York Yankees</h2>
+                <p>Gorra Fitted <br> Sin Parche</p>
+            </div>
+            <div class="product-card">
+                <img src="White Sox lh=g.jpg">
+                <h2>Chicago White Sox</h2>
+                <p>Gorra Fitted <br> Parches: World Series 2005 - Love & Hustle = Game</p>
+            </div>
+            <div class="product-card">
+                <img src="White Sox 88.jpg">
+                <h2>Chicago White Sox</h2>
+                <p>Gorra Fitted <br> Parche: 88</p>
+            </div>
+            <!-- Añade más modelos aquí -->
+            <div class="product-card">
+                <img src="Washington Nationals.jpg" alt="Modelo 4">
+                <h2>Washington Nationals</h2>
+                <p>Gorra Fitted <br> Parches: World Series 2019 - Love & Hustle = Game</p>
+            </div>
+            <div class="product-card">
+                <img src="San Diego Padres.jpg" alt="Modelo 5">
+                <h2>San Diego Padres</h2>
+                <p>Gorra Fitted <br> Parche: San Diego Padres 25 - 1969/1993 <br> Sin Parche</p>
+            </div>
+            <div class="product-card">
+                <img src="Rangers azul.jpg" alt="Modelo 6">
+                <h2>Texas Rangers</h2>
+                <p>Gorra Fitted <br> Parche: World Series 2023</p>
+            </div>
+            <div class="product-card">
+                <img src="Oakland Athletics, flores.jpg" alt="Modelo 7">
+                <h2>Modelo 7</h2>
+                <p>Gorra Fitted <br> Parche: World Series 1989</p>
+            </div>
+            <div class="product-card">
+                <img src="AS lhg.jpg" alt="Modelo 8">
+                <h2>Oakland Athletics</h2>
+                <p>Gorra Fitted <br> Parches: World Series 1989 - Love & Hustle = Game</p>
+            </div>
+            <div class="product-card">
+                <img src="Chicago White Sox all star.jpg" alt="Modelo 9">
+                <h2>Chicago White Sox</h2>
+                <p>Gorra Fitted <br> Parche: All Star Game 2003</p>
+            </div>
+            <div class="product-card">
+                <img src="LA azul lh=g.jpg" alt="Modelo 10">
+                <h2>Los Angeles Dodgers</h2>
+                <p>Gorra Fitted <br> Parches: World Series 1988 - Love & Hustle = Game</p>
+            </div>
+            <div class="product-card">
+                <img src="LA azul.jpg" alt="Modelo 11">
+                <h2>Los Angeles Dodgers</h2>
+                <p>Gorra Fitted <br> Sin Parche</p>
+            </div>
+            <div class="product-card">
+                <img src="LA CELESTE DE FLORES.jpg" alt="Modelo 12">
+                <h2>Los Angeles Dodgers</h2>
+                <p>Gorra Fitted <br> Parches: World Series 1988 </p>
+            </div>
+            <div class="product-card">
+                <img src="LA Dodgers celeste.jpg" alt="Modelo 13">
+                <h2>Los Angeles Dodgers</h2>
+                <p>Gorra Fitted <br> Sin Parche</p>
+            </div>
+            <div class="product-card">
+                <img src="LA Dodgers chocolate.jpg" alt="Modelo 14">
+                <h2>Los Angeles Dodgers</h2>
+                <p>Gorra Fitted <br> Parches: Los Angeles Dodgers 1958-2018</p>
+            </div>
+            <div class="product-card">
+                <img src="LA Dodgers roja lh=g.jpg" alt="Modelo 15">
+                <h2>Los Angeles Dodgers</h2>
+                <p>Gorra Fitted <br> Parches: World Series 1988 - Love & Hustle = Game</p>
+            </div>
+            <div class="product-card">
+                <img src="LA Dodgers World Series 2024.jpg" alt="Modelo 16">
+                <h2>Los Angeles Dodgers</h2>
+                <p>Gorra Fitted <br> Parches: World Series 2024 Champions</p>
+            </div>
+            <div class="product-card">
+                <img src="LA negra.jpg" alt="Modelo 17">
+                <h2>Los Angeles Dodgers</h2>
+                <p>Gorra Ajustable <br> Sin Parche</p>
+            </div>
+            <div class="product-card">
+                <img src="LA roja.jpg" alt="Modelo 18">
+                <h2>Los Angeles Dodgers</h2>
+                <p>Gorra Ajustable <br> Sin Parche</p>
+            </div>
+            <div class="product-card">
+                <img src="LA rojo vino.jpg" alt="Modelo 19">
+                <h2>Los Angeles Dodgers</h2>
+                <p>Gorra Fitted <br> Sin Parche</p>
+            </div>
+            <div class="product-card">
+                <img src="LA verde.jpg" alt="Modelo 20">
+                <h2>Los Angeles Dodgers</h2>
+                <p>Gorra Ajustable <br> Sin Parche</p>
+            </div>
+            <div class="product-card">
+                <img src="New York Yankees celeste.jpg" alt="Modelo 21">
+                <h2>New York Yankees</h2>
+                <p>Gorra Ajustable <br> Sin Parche</p>
+            </div>
+            <div class="product-card">
+                <img src="New York Yankees.jpg" alt="Modelo 22">
+                <h2>New York Yankees</h2>
+                <p>Gorra Ajustable <br> Parches: World Series 1999</p>
+            </div>
+            <div class="product-card">
+                <img src="NY roja.jpg" alt="Modelo 23">
+                <h2>New York Yankees</h2>
+                <p>Gorra Fitted <br> Sin Parche</p>
+            </div>
+            <div class="product-card">
+                <img src="NY verde.jpg" alt="Modelo 24">
+                <h2>New York Yankees</h2>
+                <p>Gorra Fitted y Aajustable <br> Parche: World Series 1949</p>
+            </div>
+            <div class="product-card">
+                <img src="Oakland Athletics parches ciudad.jpg" alt="Modelo 25">
+                <h2>Oakland Athletics</h2>
+                <p>Gorra Ajustable <br> Parches: Propios de la ciudad</p>
+            </div>
+            <div class="product-card">
+                <img src="Oakland Athletics simple.jpg" alt="Modelo 26">
+                <h2>Oakland Athletics</h2>
+                <p>Gorra Fitted <br> Sin Parches</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; @hustlelids_co</p>
+    </footer>
+</body>
+</html>
