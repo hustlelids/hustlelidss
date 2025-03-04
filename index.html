@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hustle Lids</title>
+
+    <link rel="icon" href="Imagen de WhatsApp 2025-02-28 a las 20.21.53_4ee97fd8.jpg" type="image/png">
+    <style>
+         /* Estilos para el título con imagen */
+         .title-with-image {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .title-with-image img {
+            width: 50px; /* Ajusta el tamaño de la imagen */
+            height: auto;
+            margin-right: 10px; /* Espacio entre la imagen y el texto */
+        }
+        /* Estilos generales */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            background-image: url('Imagen de WhatsApp 2025-02-28 a las 20.21.53_4ee97fd8.jpg'); /* Cambia por tu imagen */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            overflow: hidden;
+        }
+
+        /* Contenedor de bienvenida */
+        .welcome-container {
+            background-color: rgba(255, 255, 255, 0.6); /* Más transparente */
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            max-width: 400px;
+            width: 100%;
+            animation: fadeIn 1.5s ease-in-out;
+            backdrop-filter: blur(10px); /* Efecto de desenfoque */
+            border: 1px solid rgba(255, 255, 255, 0.2); /* Borde sutil */
+        }
+
+        /* Animación de entrada */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Título */
+        h1 {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 10px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            animation: slideIn 1s ease-in-out;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra de texto */
+            background: linear-gradient(90deg, #28a745, #218838); /* Gradiente */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Slogan */
+        p {
+            font-size: 1.2em;
+            color: #444;
+            margin-bottom: 30px;
+            animation: slideIn 1.2s ease-in-out;
+            font-style: italic;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Sombra de texto */
+        }
+
+        /* Botón "Entrar" */
+        .btn-entrar {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-size: 1.1em;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+            animation: fadeIn 1.5s ease-in-out;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra del botón */
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-entrar:hover {
+            background-color: #218838;
+            transform: scale(1.05);
+        }
+
+        /* Efecto de brillo en el botón (corregido) */
+        .btn-entrar::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 300%;
+            height: 300%;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            transition: transform 0.5s ease;
+            pointer-events: none; /* Evita que el efecto interfiera con el clic */
+        }
+
+        .btn-entrar:active::after {
+            transform: translate(-50%, -50%) scale(1);
+            opacity: 0;
+        }
+
+        /* Animación de deslizamiento */
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="welcome-container">
+        <!-- Título y slogan -->
+        <h1>Bienvenido</h1>
+        <p>Fresh Caps, New Beginnings</p>
+        <!-- Botón para entrar al catálogo -->
+        <button class="btn-entrar" onclick="window.location.href = 'modelos.html';">Entrar</button>
+    </div>
+</body>
+</html>
